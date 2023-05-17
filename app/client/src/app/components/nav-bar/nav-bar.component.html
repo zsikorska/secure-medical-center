@@ -1,0 +1,31 @@
+<nav class="navigation-container">
+  <div class="left-action-buttons">
+    <button class="app-title-button" mat-button routerLink="/">
+      eHealth
+    </button>
+
+    <div *ngIf="(accountService.currentUser$ | async)">
+    <div class="link-buttons">
+      <button mat-button routerLink="make-appointment" routerLinkActive="active">Make an appointment</button>
+      <button mat-button routerLink="examination-result" routerLinkActive="active">Diagnosis of examination</button>
+      <button mat-button routerLink="contact" routerLinkActive="active">Contact</button>
+    </div>
+      </div>
+  </div>
+
+  <div class="logged-user-view" *ngIf="(accountService.currentUser$ | async) as user; else loginFormComponent">
+    {{ user.firstname }} {{ user.lastname }}
+    <button mat-mini-fab color="warn" aria-label="Logout" (click)="logout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </div>
+
+  <ng-template #loginFormComponent>
+    <div class="action-buttons">
+      <button mat-raised-button class="blue-fb-color" (click)="navigateToLogin()">Login</button>
+      <mat-divider class="nav-divider" [vertical]="true"></mat-divider>
+      <button mat-raised-button class="green-fb-color" (click)="navigateToRegister()">Register</button>
+    </div>
+  </ng-template>
+
+</nav>

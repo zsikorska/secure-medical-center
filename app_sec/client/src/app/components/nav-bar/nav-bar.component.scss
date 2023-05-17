@@ -1,0 +1,86 @@
+nav.navigation-container {
+  height: 100%;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  background: #673ab7;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+div.left-action-buttons {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  min-width: 50%;
+
+  .link-buttons {
+    display: flex;
+    //border-top: 2px rgba(124, 252, 0, 0.71) solid;
+
+
+  }
+
+  button:hover {
+    background-color: #472580;
+  }
+
+  button.active {
+    background-color: #5a2ea2;
+  }
+
+  button.active:hover {
+    background-color: #472580;
+  }
+}
+
+button.app-title-button{
+  font-size: 2rem;
+  height: 3rem;
+}
+
+div.logo {
+  height: 80%;
+  padding: 0 0.1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.login-container {
+  display: inline-flex;
+  gap: 0.4rem;
+  margin-right: 0.4rem;
+  font-size: 12px;
+
+}
+
+div.action-buttons {
+  display: inline-flex;
+  gap: 0.4rem;
+  min-height: 50%;
+  aspect-ratio: 5/1;
+
+  button {
+    font-size: medium;
+  }
+}
+
+.nav-divider {
+  background-color: rgba(124, 252, 0, 0.71);
+}
+
+.logged-user-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}

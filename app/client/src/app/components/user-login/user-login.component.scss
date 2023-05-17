@@ -1,0 +1,13 @@
+.login-form{
+  margin: 1rem 0;
+}
+
+.form-inputs {
+  display: inline-flex;
+  width: 100%;
+  gap: 1rem;
+
+  mat-form-field {
+    flex: 1;
+  }
+}

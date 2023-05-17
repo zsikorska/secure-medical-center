@@ -1,0 +1,19 @@
+.application {
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+.content {
+  padding-top: 5rem;
+  margin-inline: 20rem;
+}

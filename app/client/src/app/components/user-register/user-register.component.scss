@@ -1,0 +1,11 @@
+div.register-user-component {
+  margin: 1rem 0;
+}
+
+.form-patient-grid {
+  grid-area: patient;
+  display: inline-grid;
+  grid-template-columns: calc(50% - 0.8rem) calc(50% - 0.8rem);
+  column-gap: 1.6rem;
+  width: 100%;
+}

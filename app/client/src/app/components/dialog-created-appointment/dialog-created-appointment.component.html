@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Diagnosis</h1>
+<div mat-dialog-content style="display: inline-flex; gap: 1rem; align-items: center; padding: 0.5rem;">
+  Diagnosis id: <strong> {{ data.code }} </strong>
+  <button mat-mini-fab [cdkCopyToClipboard]="data.code" aria-label="Copy" (click)="copied()">
+    <mat-icon>content_copy</mat-icon>
+  </button>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
+

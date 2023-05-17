@@ -1,0 +1,55 @@
+<section class="component">
+  <div class="result-examination-component">
+    <mat-card>
+      <mat-card-title>
+        Get your diagnosis:
+      </mat-card-title>
+      <mat-card-content class="form-grid-content">
+
+        <mat-form-field class="item1" appearance="outline">
+          <mat-label>Diagnosis code</mat-label>
+          <input matInput [formControl]="diagnosisForm">
+          <mat-hint>Write the code given by doctor</mat-hint>
+        </mat-form-field>
+
+        <mat-card-actions class="item2">
+          <button mat-raised-button (click)="getResultsOfExamination()" color="primary">Send</button>
+        </mat-card-actions>
+
+
+        <div *ngIf="diagnosis">
+          <h3>Your results of medical examination:</h3>
+          <h4>Patient data:</h4>
+          <p>Name:
+            {{diagnosis.appointment.patient.firstname}}
+            {{diagnosis.appointment.patient.lastname}}
+          </p>
+          <p>Email: {{diagnosis.appointment.patient.email}}</p>
+          <p>Date of birth:
+            {{diagnosis.appointment.patient.birthdate}}
+          </p>
+
+          <h4>Appointment data:</h4>
+          <p>Topic of the appointment: {{diagnosis.appointment.topic}}</p>
+          <p>Date of the appointment:
+            {{diagnosis.appointment.date}}
+          </p>
+          <p>Doctor:
+            {{diagnosis.appointment.doctor.firstname}}
+            {{diagnosis.appointment.doctor.lastname}}
+          </p>
+
+          <h4>Diagnosis:</h4>
+          <p>Disease: {{diagnosis.disease}}</p>
+          <p>Description: {{diagnosis.description}}</p>
+        </div>
+
+        <div *ngIf="!rightCode">
+          <h3>Provided code is not a valid diagnosis code. Please enter a correct code.</h3>
+        </div>
+
+
+      </mat-card-content>
+    </mat-card>
+  </div>
+</section>

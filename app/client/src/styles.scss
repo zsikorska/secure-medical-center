@@ -1,0 +1,50 @@
+html, body {
+  height: calc(100% - 2rem);
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.green-color {
+  background-color: #00C853;
+  color: white;
+}
+
+.green-fb-color {
+  background-color: #42b72a;
+  color: white;
+}
+
+.green-fb-color:hover {
+  background-color: rgb(31, 166, 38);
+}
+
+.blue-fb-color {
+  background-color: #1877f2;
+  color: white;
+}
+
+.blue-fb-color:hover {
+  background-color: #1765c9;
+}
+
+.red-color {
+  background-color: #ED2939;
+  color: white;
+}
+
+.red-color:hover {
+  background-color: #c22331;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

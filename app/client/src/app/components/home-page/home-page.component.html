@@ -1,0 +1,46 @@
+<section class="component">
+  <div class="home-page-component">
+    <h1 class="ehealth-brand">
+      eHealth Corp
+    </h1>
+
+    <img src="assets/images/doctor1.png" alt="Smiley face" style="float:right; width: 25rem; height:25rem;">
+
+    <h3>What you need to know about</h3>
+    eHealth Corp is our clinic that offers our patients the best healthcare.
+    The company was founded in 2021 and has helped thousands of people since then.
+
+    We have all the newest gear, and our staff is always acquainted with all medical news
+    and whole time updates their knowledge.
+
+    Every one of our patients is pleased with our service.
+
+    <h3>Our services</h3>
+    We offer our patients a lot of specialized services.
+    The most important ones are detailed below.
+
+    <p>Our offer:</p>
+
+    <ul>
+      <li>Pediatric examination</li>
+      <li>Radiologic examination</li>
+      <li>Cardiological examination</li>
+      <li>Cleaning the ears</li>
+      <li>Recreating the eyeballs</li>
+      <li>Initial examinations for tooth replacement</li>
+      <li>Ornithological examination</li>
+      <li>Examination in terms of evolutionary adaptation to selection in the next iteration</li>
+      <li>Psychological examination</li>
+    </ul>
+
+    <h3>Current clinic staff</h3>
+    In our clinic work the best doctors in the country.
+
+    <ul>
+      <li>Dr Mirá Ocroba</li>
+      <li>Dr Stand Famous</li>
+      <li>Dr Susan Rodrigez</li>
+      <li *ngFor="let d of doctors">Dr {{d.firstname}} {{d.lastname}}</li>
+    </ul>
+  </div>
+</section>
